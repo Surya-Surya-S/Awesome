@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Raleway:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Raleway:wght@300;400;700;800;900&display=swap');
 
 *{
     margin: 0;
@@ -394,4 +394,156 @@ h4 sup{
 .portfolio_list li a{
     font-size: 8px;
 }
+a.active{
+    background-color: #1fb5ac;
+}
+.row li a:hover, li:hover a{
+    background-color: #1fb5ac;
+    color: #fff;
+    border: none;
+}
+.portfolio_image{
+    grid-template-columns: auto auto auto auto;
+}
 /* portfolio_end */
+
+/* plan_start */
+.plan{
+    background-color: #ecf0f1;
+}
+.plan_inner{
+    width: 90%;
+    font-family: 'Raleway';
+}
+.plan_inner h2 {
+    padding-top: 70px;
+}
+.plan_inner h2::before {
+    content: "";
+    width: 19%;
+    height: 6%;
+    top: 64%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #1fb5ac;
+    position: absolute;
+}
+.plan_inner h2::after {
+    content: "";
+    width: 19%;
+    height: 6%;
+    bottom: -4%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #1fb5ac;
+    position: absolute;
+}
+.plan_bg{
+    width: 90%;
+}
+.plan_bg h4::before {
+    content: "";
+    width: 22%;
+    height: 12%;
+    top: -9%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #1fb5ac;
+    position: absolute;
+}
+.plan_bg .triangle{
+    border-left: 70px solid transparent;
+    border-right: 70px solid transparent;
+    border-bottom: 120px solid #1fb5ac;
+}
+.plan_bg h5{
+    font-size: 16px;
+    font-weight: 700;
+}
+.plan_bg h3{
+    font-size: 36px;
+    font-weight: 800;
+}
+.traingle_content{
+    margin-top: -98px;
+}
+.plan_para span{
+    color: #1fb5ac;
+    font-weight: 600;
+}
+.plan_para p{
+    font-size: 17px;
+    color: #2d2d2d;
+}
+.plan_para sup{
+    font-size: 20px;
+    vertical-align: text-bottom;
+}
+.plan_para a{
+    font-size: 14px;
+    background-color: #1fb5ac;
+}
+/* plan_end */
+
+/* client_start */
+.client{
+    background: url('../images/img17.jpg') no-repeat center;
+    background-size: cover;
+}
+.client_inner{
+    width: 90%;
+    font-family: 'Raleway';
+}
+.client_inner h2{
+    font-size: 90px;
+    font-weight: 700;
+    border: 1px dashed #fff;
+}
+.client .overlay{
+    background-color: rgba(20, 20, 20, 70%);
+}
+.client_inner p{
+    width: 68%;
+}
+.carousel_img{
+    width: 140px;
+    height: 140px;
+    border-radius: 100%;
+    display: inline-block;
+    overflow: hidden;
+    margin: 0 auto;
+}
+#carouselExampleIndicators{
+    padding: 0 0 100px;
+}
+.carousel-indicators {
+    margin: 0 0 -57px;
+}
+/* client_end */
+
+/* brand_start */
+.brand{
+    background-color: #1fb5ac;
+}
+.brand_inner{
+    width: 90%;
+}
+.brand_inner{
+    grid-template-columns: auto auto auto auto;
+}
+/* brand_end */
+
+/* blog_start */
+.blog_inner{
+    width: 90%;
+    font-family: 'Raleway';
+}
+.blog_inner h2 {
+    font-size: 90px;
+    font-weight: 700;
+    border: 1px dashed #000;
+}
+.blog_inner p {
+    width: 68%;
+}
+/* blog_end */
