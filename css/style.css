@@ -544,6 +544,134 @@ a.active{
     border: 1px dashed #000;
 }
 .blog_inner p {
-    width: 68%;
+    width: 84%;
+    font-size: 16px;
+    line-height: 26px;
+}
+.blog_content{
+    grid-template-columns: 46% 54%;
+}
+.blog_content:nth-child(2){
+    background-color: #ecf0f1;
+    grid-template-columns: 46% 54%;
+}
+.blog_lef .blog_para a, .blog_inner:nth-child(1) a{
+    font-size: 14px;
+    color: #1fb5ac;
+    border: 2px solid #1fb5ac;
+    padding: 8px;
+}
+.blog_content img, .blog_content:nth-child(2) img, .blog_rig img{
+    width: -webkit-fill-available;
+}
+.blog_lef{
+    width: 70%;
+}
+.blog_rig{
+    width: 30%;
+    background-color: #ecf0f1;
+}
+.blog_inner a{
+    font-size: 18px;
 }
 /* blog_end */
+
+/* twit_start */
+.twit{
+    background-color: #ecf0f1;
+}
+.twit_inner{
+    width: 90%;
+    font-family: 'Raleway';
+}
+.twit_inner h2::before {
+    content: "";
+    width: 17%;
+    height: 10%;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #1fb5ac;
+    position: absolute;
+}
+.twit_inner h2::after {
+    content: "";
+    width: 17%;
+    height: 10%;
+    bottom: -4%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #1fb5ac;
+    position: absolute;
+}
+.fa-twitter{
+    background-color: #1fb5ac;
+}
+.twit_bottom h4, .twit_bottom h5{
+    color: #1fb5ac;
+}
+.twit_bottom p, .twit_bottom h6{
+    font-size: 20px;
+    color: #545454;
+}
+.twit_bottom h6{
+    font-size: 16px;
+}
+/* twit_end */
+
+/* watch_start */
+.watch{
+    background: url('../images/img29.jpeg') no-repeat center;
+    background-size: cover;
+}
+.watch_inner{
+    width: 90%;
+    font-family: 'Raleway';
+}
+.watch_inner h2{
+    font-size: 90px;
+    font-weight: 700;
+    border: 1px dashed #fff;
+}
+.watch_inner p {
+    width: 68%;
+}
+.play{
+    width: 130px;
+    height: 130px;
+    border-radius: 100%;
+}
+.fa-play{
+    font-size: 70px;
+    margin: 24px 38px;
+}
+/* watch_end */
+
+/* contact_start */
+.contact_inner{
+    width: 90%;
+    font-family: 'Raleway';
+}
+.contact_inner h2{
+    font-size: 90px;
+    font-weight: 700;
+    border: 1px dashed #000;
+}
+.contact_inner p{
+    width: 76%;
+    font-size: 20px;
+    line-height: 32px;
+}
+.inner_details h4{
+    font-size: 14px;
+    color: #777777;
+}
+.contact_details{
+    grid-template-columns: auto auto;
+    gap: 20px;
+}
+.contact_bottom a{
+    font-size: 14px;
+    color: #1fb5ac;
+}
+/* contact_end */
