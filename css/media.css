@@ -1,4 +1,5 @@
 @media only screen and (max-width: 576px){
+/* banner_start */
 .banner_inner h2{
     font-size: 40px;
     padding-left: 1rem !important;
@@ -14,4 +15,31 @@
     font-size: 6px;
     margin-bottom: -1px !important;
 }
+/* banner_end */
+
+/* feature_start */
+.feature_inner h2::before{
+    width: 28%;
+    top: 70%;
+}
+.feature_inner h2::after{
+    width: 29%;
+}
+.feature_bottom.row{
+    flex-direction: column;
+}
+/* feature_end */
+
+/* about_start */
+.about_inner h2{
+    font-size: 40px;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+}
+.about_inner p{
+    width: 86%;
+    font-size: 14px !important;
+    line-height: 24px;
+}
+/* about_end */
 }
