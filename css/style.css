@@ -78,7 +78,7 @@ body{
     content: "";
     width: 12%;
     height: 4%;
-    top: 64%;
+    top: 65%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #1fb5ac;
@@ -160,7 +160,7 @@ body{
     content: "";
     width: 14%;
     height: 4%;
-    top: 71%;
+    top: 67%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #1fb5ac;
@@ -175,6 +175,9 @@ body{
     transform: translate(-50%, -50%);
     background-color: #1fb5ac;
     position: absolute;
+}
+.skills_bottom{
+    width: 80%;
 }
 .level_inner.rounded-circle{
     width: 140px;
@@ -252,6 +255,9 @@ svg{
 #team{
     background: url('../images/img7.jfif') no-repeat center;
     background-size: cover;
+}
+#team .overlay{
+    background-color: rgba(20, 20, 20, 80%);
 }
 .team_inner{
     width: 90%;
@@ -394,14 +400,17 @@ svg{
     background: url('../images/img8.jpg') no-repeat center;
     background-size: cover;
 }
+.core .overlay{
+    background-color: rgba(20, 20, 20, 80%);
+}
 .core_inner{
     width: 90%;
 }
-.core_inner h2::before {
+.core_inner h2::before{
     content: "";
     width: 19%;
-    height: 6%;
-    top: 63%;
+    height: 5%;
+    top: 59%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #fff;
@@ -410,7 +419,7 @@ svg{
 .core_inner h2::after {
     content: "";
     width: 19%;
-    height: 6%;
+    height: 5%;
     bottom: -6%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -471,8 +480,8 @@ a.text-decoration-none.text-dark.border.border-2.border-light-subtle.p-2:hover {
 .plan_inner h2::before {
     content: "";
     width: 19%;
-    height: 6%;
-    top: 68%;
+    height: 5%;
+    top: 65%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #1fb5ac;
@@ -481,8 +490,8 @@ a.text-decoration-none.text-dark.border.border-2.border-light-subtle.p-2:hover {
 .plan_inner h2::after {
     content: "";
     width: 19%;
-    height: 6%;
-    bottom: -7%;
+    height: 5%;
+    bottom: -3%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #1fb5ac;
@@ -548,6 +557,9 @@ a.text-decoration-none.text-dark.border.border-2.border-light-subtle.p-2:hover {
 #client{
     background: url('../images/img17.jpg') no-repeat center;
     background-size: cover;
+}
+#client .overlay{
+    background-color: rgba(20, 20, 20, 80%);
 }
 .client_inner{
     width: 90%;
@@ -653,7 +665,7 @@ button.carousel-control-prev, button.carousel-control-next{
 }
 .twit_inner h2::before {
     content: "";
-    width: 17%;
+    width: 19%;
     height: 10%;
     top: 0;
     left: 50%;
@@ -663,7 +675,7 @@ button.carousel-control-prev, button.carousel-control-next{
 }
 .twit_inner h2::after {
     content: "";
-    width: 17%;
+    width: 19%;
     height: 10%;
     bottom: -4%;
     left: 50%;
@@ -691,6 +703,9 @@ button.carousel-control-prev, button.carousel-control-next{
 .watch{
     background: url('../images/img29.jpeg') no-repeat center;
     background-size: cover;
+}
+.watch .overlay{
+    background-color: rgba(20, 20, 20, 80%);
 }
 .watch_inner{
     width: 90%;
@@ -743,6 +758,10 @@ button.carousel-control-prev, button.carousel-control-next{
 .contact_details{
     grid-template-columns: auto auto;
     gap: 20px;
+    outline: none;
+}
+.contact_details input{
+    outline: none;
 }
 .contact_bottom a{
     font-size: 14px;
@@ -776,7 +795,7 @@ textarea{
     content: "";
     width: 19%;
     height: 10%;
-    bottom: -6%;
+    bottom: -7%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #1fb5ac;
