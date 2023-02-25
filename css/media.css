@@ -10,6 +10,12 @@
     font-size: 12px!important;
     margin-top: -10px!important;
 }
+.navbar_inner a.col-4.m-auto{
+    display: none;
+}
+.navbar_inner .menu{
+    width: 100%;
+}
 .menu ul{
     display: flex;
     font-size: 6px;
@@ -36,10 +42,358 @@
     padding-left: 1rem !important;
     padding-right: 1rem !important;
 }
+.about_para img{
+    width: 348px!important;
+}
 .about_inner p{
-    width: 86%;
-    font-size: 14px !important;
-    line-height: 24px;
+    width: 100% !important;
+}
+.about_inner p{
+    font-size: 12px !important;
+    line-height: 22px;
+}
+.about_para{
+    flex-direction: column;
+}
+.about_para:nth-child(2) div{
+    width: 100% !important;
+    margin: 0 auto;
 }
 /* about_end */
+
+/* skills_start */
+.skills_inner h2::before, .skills_inner h2::after{
+    width: 38%;
+}
+.skills_level{
+    margin-bottom: 20px;
+}
+/* skills_end */
+
+/* team_start */
+.team_inner h2{
+    font-size: 40px;
+}
+.team_bottom{
+    flex-direction: column;
+}
+.team_inner p{
+    width: 100%;
+    font-size: 12px!important;
+    line-height: 22px!important;
+}
+.team_details{
+    width: 80% !important;
+    margin: 0 auto;
+}
+.team_para p{
+    width: 80%;
+}
+.square{
+    display: none;
+}
+/* team_end */
+
+/* review_start */
+.review-details.row.col-sm.text-sm-center.text-lg-start{
+    width: 70%;
+    margin: 0 auto;
+}
+.reviews{
+    padding-top: 8px;
+}
+.reviews h4{
+    font-size: 30px;
+}
+.reviews h4 sup{
+    font-size: 30px;
+    vertical-align: sub;
+    font-weight: 600;
+}
+.reviews p{
+    font-size: 8px;
+}
+.fa-square-check{
+    font-size: 46px !important;
+    padding-right: 1px;
+}
+/* review_end */
+
+/* services_start */
+.service_bottom{
+    flex-direction: column;
+}
+.service_inner h2{
+    font-size: 40px;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+}
+.services_inner p{
+    width: 100%;
+}
+.service_inner p{
+    font-size: 12px !important;
+    line-height: 22px;
+}
+.service_content{
+    margin-bottom: 20px;
+}
+/* services_end */
+
+/* core_start */
+.core_inner h2::before{
+    width: 50%;
+}
+.core_inner h2::after{
+    width: 50%;
+}
+.core_content{
+    flex-direction: column;
+}
+.core_details{
+    margin-bottom: 30px;
+}
+/* core_end */
+
+/* portfolio_start */
+.portfolio_inner h2{
+    font-size: 40px;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+}
+.portfolio_inner p{
+    width: 100%;
+    font-size: 12px !important;
+    line-height: 22px;
+}
+.porfolio_list ul{
+    flex-wrap: wrap;
+    padding-left: 0;
+}
+.porfolio_list li{
+    margin-bottom: 20px;
+}
+.porfolio_list li:nth-child(4), .porfolio_list li:nth-child(5){
+    margin-bottom: 0;
+}
+.porfolio_list li a{
+    font-size: 7px;
+    display: inline-block;
+}
+.portfolio_image{
+    grid-template-columns: auto auto;
+}
+/* portfolio_end */
+.plan_inner h2::before{
+    width: 50%;
+}
+.plan_inner h2::after{
+    width: 50%;
+}
+.plan_bottom .plan_content{
+    width: 80% !important;
+    margin: 0 auto 20px;
+}
+/* plan_start */
+
+/* client_start */
+.client_inner h2{
+    font-size: 40px;
+}
+.client_inner p{
+    width: 100%;
+    font-size: 12px!important;
+    line-height: 22px!important;
+}
+/* client_end */
+
+/* brand_start */
+.brand_inner{
+    grid-template-columns: auto auto;
+}
+.brand-details{
+    width: 80%;
+    margin: 0 auto 30px;
+}
+/* brand_end */
+
+/* blog_start */
+.blog_inner h2{
+    font-size: 40px;
+}
+.blog_inner p{
+    width: 100%;
+    font-size: 12px !important;
+    line-height: 22px;
+}
+.blog_bottom{
+    flex-direction: column;
+}
+.blog_lef{
+    width: 100%;
+}
+.blog_para h4{
+    font-size: 12px!important;
+    padding: 0 0 0 20px!important;
+}
+.blog_para p{
+    font-size: 10px !important;
+    line-height: 20px;
+    padding: 0 0 0 20px;
+    margin-bottom: 0;
+}
+.blog_para a{
+    font-size: 10px !important;
+    margin-left: 20px;
+}
+.blog_content:nth-child(2) .blog_para h4, .blog_content:nth-child(2) .blog_para p{
+    width: 94%;
+    padding-left: 0!important;
+}
+.blog_content:nth-child(2) .blog_para a{
+    margin-left: 0 !important;
+}
+.blog_content:nth-child(2) .blog_para{
+    padding: 10px 0 20px 6px;
+}
+.blog_rig{
+    width: 80%;
+    overflow: hidden;
+    margin: 20px auto 0;
+}
+.blog_rig .blog_para{
+    width: 77%;
+    padding-left: 0!important;
+}
+.blog_bottom .blog_rig img{
+    margin-bottom: 18px;
+}
+.blog_rig .blog_para p{
+    margin-bottom: 20px;
+}
+/* blog_end */
+
+/* twit_start */
+.twit_inner h2::before{
+    width: 50%;
+}
+.twit_inner h2::after{
+    width: 50%;
+}
+.twit_bottom{
+    width: 92% !important;
+    padding-bottom: 0 !important;
+}
+.twit_bottom .fa-twitter{
+    width: 20%;
+}
+.twit_bottom p{
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 10px !important;
+}
+.twit_bottom h4{
+    font-size: 20px;
+    margin-bottom: 10px !important;
+}
+.twit_bottom h5{
+    font-size: 10px !important;
+    margin-bottom: 20px !important;
+}
+.twit_bottom h6{
+    font-size: 12px;
+    margin-bottom: 0 !important;
+}
+/* twit_end */
+
+/* watch_start */
+.watch_inner h2{
+    font-size: 40px;
+}
+.watch_inner p {
+    width: 100%;
+    font-size: 12px !important;
+    line-height: 22px;
+}
+.play{
+    width: 80px;
+    height: 80px;
+}
+.fa-play{
+    font-size: 36px;
+    margin: 17px 25px;
+}
+/* watch_end */
+
+/* contact_start */
+.contact_inner h2{
+    font-size: 40px;
+}
+.contact_inner p{
+    width: 100%;
+    font-size: 12px !important;
+    line-height: 22px;
+}
+.contact_details{
+    grid-template-columns: auto;
+    gap: 20px;
+}
+/* contact_end */
+
+/* touch_start */
+.touch_inner h2::before{
+    width: 47%;
+}
+.touch_inner h2::after{
+    width: 47%;
+}
+.touch_bottom{
+    flex-direction: column;
+}
+.get_inner{
+    width: 100%;
+}
+.get_top{
+    width: 20%;
+}
+.get_content h4::before{
+    width: 26%;
+}
+.get_inner:nth-child(2) .get_content h4::before{
+    width: 18%;
+}
+.get_inner:nth-child(3) .get_content h4::before{
+    width: 22%;
+}
+.get_inner:nth-child(4) .get_content h4::before{
+    width: 20%;
+}
+.get_content{
+    margin-bottom: 28px !important;
+}
+input{
+    width: 100%;
+}
+::placeholder{
+    font-size: 10px;
+}
+form a{
+    width: 40%;
+    margin: 8px auto;
+}
+/* touch_end */
+
+/* social_start */
+.social_inner{
+    width: 70%;
+    grid-template-columns: 20% 20% 20%;
+    justify-content: center;
+}
+footer h4, .fa-diamond-turn-right{
+    font-size: 12px !important;
+}
+footer span{
+    font-size: 10px;
+}
+/* social_end */
 }

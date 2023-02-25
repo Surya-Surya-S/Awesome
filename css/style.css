@@ -12,7 +12,7 @@ body{
     font-family: 'Noto Sans JP', 'Raleway', sans-serif;
 }
 /* banner_start */
-.banner{
+#banner{
     background: url('../images/banner.jpg') no-repeat center;
     background-size: cover;
 }
@@ -56,6 +56,7 @@ body{
 }
 .menu li:hover a{
     color: #1fb5ac !important;
+    /* background-color: none !important; */
 }
 .navbar{
     border-color: #d9dcdd;
@@ -96,9 +97,12 @@ body{
 .feature_content h4{
     font-size: 1rem!important;
 }
-.fa-thumbs-up, .fa-laptop, .fa-gift{
+.features_details .fa-thumbs-up, .fa-laptop, .fa-gift{
     width: 20%;
     border-bottom: 4px solid #1fb5ac;
+}
+.features_details .fa-laptop{
+    width: 27%;
 }
 .fa-laptop:nth-child(){
     width: 28%;
@@ -156,7 +160,7 @@ body{
     content: "";
     width: 14%;
     height: 4%;
-    top: 67%;
+    top: 71%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #1fb5ac;
@@ -196,10 +200,56 @@ h4 sup{
     font-size: 14px;
     font-weight: 600;
 }
+circle{
+    fill: none;
+    stroke: url('#GradientColor');
+    stroke-width: 10px;
+    stroke-dasharray: 385;
+    stroke-dashoffset: 385;
+    animation: anim 3s linear forwards;
+}
+.skills_level:nth-child(2) circle{
+    stroke: #e0c124;
+    animation: anima 3s linear forwards;
+}
+.skills_level:nth-child(3) circle{
+    stroke: #9324e1;
+    animation: animat 3s linear forwards;
+}
+.skills_level:nth-child(4) circle{
+    stroke: #1fb538;
+    animation: animati 3s linear forwards;
+}
+svg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@keyframes anim{
+    100%{
+        stroke-dashoffset: 92;
+    }
+}
+@keyframes anima{
+    100%{
+        stroke-dashoffset: 19;
+    }
+}
+@keyframes animat{
+    100%{
+        stroke-dashoffset: 57;
+    }
+}
+@keyframes animati{
+    100%{
+        stroke-dashoffset: 119;
+    }
+}
 /* skills_end */
 
 /* team_start */
-.team{
+#team{
     background: url('../images/img7.jfif') no-repeat center;
     background-size: cover;
 }
@@ -351,7 +401,7 @@ h4 sup{
     content: "";
     width: 19%;
     height: 6%;
-    top: 60%;
+    top: 63%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #fff;
@@ -379,16 +429,16 @@ h4 sup{
 /* core_end */
 
 /* portfolio_start */
-.portfolio_inner {
+.portfolio_inner{
     width: 90%;
     font-family: 'Raleway';
 }
-.portfolio_inner h2 {
+.portfolio_inner h2{
     font-size: 90px;
     font-weight: 700;
     border: 1px dashed #000;
 }
-.portfolio_inner p {
+.portfolio_inner p{
     width: 68%;
 }
 .portfolio_list li a{
@@ -397,10 +447,10 @@ h4 sup{
 a.active{
     background-color: #1fb5ac;
 }
-.row li a:hover, li:hover a{
-    background-color: #1fb5ac;
-    color: #fff;
-    border: none;
+a.text-decoration-none.text-dark.border.border-2.border-light-subtle.p-2:hover {
+    background: #1fb5ac;
+    color: #fff !important;
+    border: none !important;
 }
 .portfolio_image{
     grid-template-columns: auto auto auto auto;
@@ -422,7 +472,7 @@ a.active{
     content: "";
     width: 19%;
     height: 6%;
-    top: 64%;
+    top: 68%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #1fb5ac;
@@ -432,7 +482,7 @@ a.active{
     content: "";
     width: 19%;
     height: 6%;
-    bottom: -4%;
+    bottom: -7%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #1fb5ac;
@@ -450,6 +500,15 @@ a.active{
     transform: translate(-50%, -50%);
     background-color: #1fb5ac;
     position: absolute;
+}
+.plan_content:nth-child(2) .plan_bg h4::before{
+    width: 42%;
+}
+.plan_content:nth-child(3) .plan_bg h4::before{
+    width: 37%;
+}
+.plan_content:nth-child(4) .plan_bg h4::before{
+    width: 16%;
 }
 .plan_bg .triangle{
     border-left: 70px solid transparent;
@@ -486,7 +545,7 @@ a.active{
 /* plan_end */
 
 /* client_start */
-.client{
+#client{
     background: url('../images/img17.jpg') no-repeat center;
     background-size: cover;
 }
@@ -518,6 +577,14 @@ a.active{
 }
 .carousel-indicators {
     margin: 0 0 -57px;
+}
+.carousel-indicators [data-bs-target]{
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 100%;
+}
+button.carousel-control-prev, button.carousel-control-next{
+    display: none;
 }
 /* client_end */
 
@@ -604,10 +671,11 @@ a.active{
     background-color: #1fb5ac;
     position: absolute;
 }
-.fa-twitter{
+.twit_bottom .fa-twitter{
+    width: 6%;
     background-color: #1fb5ac;
 }
-.twit_bottom h4, .twit_bottom h5{
+.twit_bottom h4, .twit_bottom h5 a{
     color: #1fb5ac;
 }
 .twit_bottom p, .twit_bottom h6{
@@ -627,6 +695,7 @@ a.active{
 .watch_inner{
     width: 90%;
     font-family: 'Raleway';
+    margin: 0 auto;
 }
 .watch_inner h2{
     font-size: 90px;
@@ -666,6 +735,11 @@ a.active{
     font-size: 14px;
     color: #777777;
 }
+::placeholder{
+    font-size: 12px;
+    text-transform: capitalize;
+    color: #777777;
+}
 .contact_details{
     grid-template-columns: auto auto;
     gap: 20px;
@@ -674,6 +748,9 @@ a.active{
     font-size: 14px;
     color: #1fb5ac;
     border-color: #ccc;
+}
+textarea{
+    outline: none;
 }
 /* contact_end */
 
@@ -699,13 +776,17 @@ a.active{
     content: "";
     width: 19%;
     height: 10%;
-    bottom: -4%;
+    bottom: -6%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #1fb5ac;
     position: absolute;
 }
+.get_inner{
+    width: 25%;
+}
 .get_top{
+    width: 20%;
     background-color: #9324e1;
 }
 .get_content p{
@@ -714,7 +795,7 @@ a.active{
 }
 .get_content h4::before{
     content: "";
-    width: 37%;
+    width: 35%;
     height: 14%;
     top: -18%;
     left: 50%;
@@ -722,8 +803,14 @@ a.active{
     background-color: #1fb5ac;
     position: absolute;
 }
-.get_content h4::before:nth-child(2){
-    width: 24%;
+.get_inner:nth-child(2) .get_content h4::before{
+    width: 23%;
+}
+.get_inner:nth-child(3) .get_content h4::before{
+    width: 28%;
+}
+.get_inner:nth-child(4) .get_content h4::before{
+    width: 26%;
 }
 .fa-map-marker-alt, .fa-regular, .fa-mobile-screen, .fa-skype{
     font-size: 28px;
@@ -788,6 +875,9 @@ footer span{
     font-size: 18px;
     font-weight: 400;
     color: #4d504f;
+}
+.fa-diamond-turn-right{
+    font-size: 20px;
 }
 .fa-chevron-up{
     font-size: 20px;

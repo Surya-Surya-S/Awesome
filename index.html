@@ -12,7 +12,7 @@
 </head>
 <body>
 <!-- banner_start -->
-<section class="banner">
+<section id ="banner">
     <div class="overlay py-3 pb-5">
         <div class="container-fluid">
             <div class="banner_inner text-center text-uppercase overflow-hidden">
@@ -32,14 +32,14 @@
             <a href="#" class="col-4 m-auto" class="logo_img"><img src="images/logo.png" alt="logo" title="logo"></a>
             <div class="menu col-8 m-auto p-0">
                 <ul class="d-sm-flex flex-row-sm align-items-sm-center justify-content-sm-between text-center text-uppercase mb-0 p-0">
-                    <li class="active col"><a href="#" class="text-decoration-none text-dark p-2">home</a></li>
-                    <li class="col-sm"><a href="#" class="text-decoration-none text-dark p-2">about</a></li>
-                    <li class="col-sm"><a href="#" class="text-decoration-none text-dark p-2">team</a></li>
-                    <li class="col-sm"><a href="#" class="text-decoration-none text-dark p-2">service</a></li>
-                    <li class="col-sm"><a href="#" class="text-decoration-none text-dark p-2">portfolio</a></li>
-                    <li class="col-sm"><a href="#" class="text-decoration-none text-dark p-2">client</a></li>
-                    <li class="col-sm"><a href="#" class="text-decoration-none text-dark p-2">blog</a></li>
-                    <li class="col-sm"><a href="#" class="text-decoration-none text-dark p-2">contact</a></li>
+                    <li class="active col"><a href="#banner" class="text-decoration-none text-dark p-2">home</a></li>
+                    <li class="col-sm"><a href="#about" class="text-decoration-none text-dark p-2">about</a></li>
+                    <li class="col-sm"><a href="#team" class="text-decoration-none text-dark p-2">team</a></li>
+                    <li class="col-sm"><a href="#services" class="text-decoration-none text-dark p-2">service</a></li>
+                    <li class="col-sm"><a href="#portfolio" class="text-decoration-none text-dark p-2">portfolio</a></li>
+                    <li class="col-sm"><a href="#client" class="text-decoration-none text-dark p-2">client</a></li>
+                    <li class="col-sm"><a href="#blog" class="text-decoration-none text-dark p-2">blog</a></li>
+                    <li class="col-sm"><a href="#contact" class="text-decoration-none text-dark p-2">contact</a></li>
                 </ul>
             </div>
         </div>
@@ -87,7 +87,7 @@
 <!-- features_end -->
 
 <!-- about_start -->
-<section class="about bg-white py-5">
+<section id ="about" class="py-5">
     <div class="container-fluid">
         <div class="about_inner text-center overflow-hidden pt-5 m-auto">
             <h2 class="vw-sm-75 d-inline-block text-uppercase p-1 mb-4 m-auto">about us</h2>
@@ -99,7 +99,7 @@
                 </div>
                 <div class="w-100 about_para row mb-4 m-auto">
                     <p class="w-50 w-md-50 w-sm-100 col-lg-6 col-md-6 col-sm-12 text-start">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</p>
-                    <div class="w-50 ratio ratio-4x3" style="--bs-aspect-ratio: 40%;">
+                    <div class="w-50 w-sm-100 ratio ratio-4x3" style="--bs-aspect-ratio: 40%;">
                         <iframe src="https://www.youtube.com/embed/rThW6nzLOE4" frameborder="0" muted></iframe>
                     </div>
                 </div>
@@ -115,37 +115,73 @@
         <div class="skills_inner text-center overflow-hidden m-auto">
             <h2 class="text-uppercase fw-bold position-relative mb-5">top skills</h2>
             <div class="skills_bottom w-75 row m-auto">
-                <div class="skills_level col">
+                <div class="skills_level col position-relative">
                     <div class="level_inner border border-light-subtle rounded-circle m-auto">
                         <div class="level_inside bg-white rounded-circle m-auto my-2 py-3">
                             <h4 class="mb-0">76<sup class="ps-1">%</sup></h4>
                             <p class="mb-0 text-capitalize">photoshop</p>
                         </div>
                     </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="142px" height="142px">
+                        <defs>
+                           <linearGradient id="GradientColor">
+                              <stop offset="0%" stop-color="#e91e63" />
+                              <stop offset="100%" stop-color="#e91e63" />
+                           </linearGradient>
+                        </defs>
+                        <circle cx="70" cy="70" r="62" stroke-linecap="round" />
+                    </svg>
                 </div>   
-                <div class="skills_level col">
+                <div class="skills_level col position-relative">
                     <div class="level_inner border border-light-subtle rounded-circle m-auto">
                         <div class="level_inside bg-white rounded-circle m-auto my-2 py-3">
                             <h4 class="mb-0">95<sup class="ps-1">%</sup></h4>
                             <p class="mb-0 text-capitalize">wordpress</p>
                         </div>
                     </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="142px" height="142px">
+                        <defs>
+                           <linearGradient id="GradientColor">
+                              <stop offset="0%" stop-color="#e91e63" />
+                              <stop offset="100%" stop-color="#e91e63" />
+                           </linearGradient>
+                        </defs>
+                        <circle cx="70" cy="70" r="62" stroke-linecap="round" />
+                    </svg>
                 </div>    
-                <div class="skills_level col">
+                <div class="skills_level col position-relative">
                     <div class="level_inner border border-light-subtle rounded-circle m-auto">
                         <div class="level_inside bg-white rounded-circle m-auto my-2 py-3">
                             <h4 class="mb-0">85<sup class="ps-1">%</sup></h4>
                             <p class="mb-0 text-capitalize">joomla</p>
                         </div>
                     </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="142px" height="142px">
+                        <defs>
+                           <linearGradient id="GradientColor">
+                              <stop offset="0%" stop-color="#e91e63" />
+                              <stop offset="100%" stop-color="#e91e63" />
+                           </linearGradient>
+                        </defs>
+                        <circle cx="70" cy="70" r="62" stroke-linecap="round" />
+                    </svg>
                 </div>   
-                <div class="skills_level col">
+                <div class="skills_level col position-relative">
                     <div class="level_inner border border-light-subtle rounded-circle m-auto">
                         <div class="level_inside bg-white rounded-circle m-auto my-2 py-3">
                             <h4 class="mb-0">69<sup class="ps-1">%</sup></h4>
                             <p class="mb-0 text-capitalize">branding</p>
                         </div>
                     </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="142px" height="142px">
+                        <defs>
+                           <linearGradient id="GradientColor">
+                              <stop offset="0%" stop-color="#e91e63" />
+                              <stop offset="100%" stop-color="#e91e63" />
+                           </linearGradient>
+                        </defs>
+                        <circle cx="70" cy="70" r="62" stroke-linecap="round" />
+                    </svg>
                 </div>   
             </div>
         </div>
@@ -154,7 +190,7 @@
 <!-- skills_end -->
 
 <!-- team_start -->
-<section class="team">
+<section id ="team">
     <div class="container-fluid overlay py-5">
         <div class="team_inner text-white text-center overflow-hidden mt-5 m-auto">
             <h2 class="vw-sm-75 d-inline-block text-uppercase p-3 mb-4 m-auto">our team</h2>
@@ -246,7 +282,7 @@
 <!-- review_end -->
 
 <!-- service_start -->
-<section class="services py-5">
+<section  id ="services" class="py-5">
     <div class="container-fluid">
         <div class="service_inner text-center overflow-hidden pt-5 m-auto">
             <h2 class="vw-sm-75 d-inline-block text-uppercase p-1 mb-4 m-auto">service</h2>
@@ -324,7 +360,7 @@
 <!-- core_end -->
 
 <!-- portfolio_start -->
-<section class="portfolio py-5">
+<section id ="portfolio" class="py-5">
     <div class="container-fluid">
         <div class="portfolio_inner text-center overflow-hidden pt-5 m-auto">
             <h2 class="vw-sm-75 d-inline-block text-uppercase p-1 mb-4 m-auto">portfolio</h2>
@@ -332,10 +368,10 @@
             <div class="porfolio_list d-grid w-75 m-auto mb-5">
                 <ul class="row">
                     <li class="col fw-bold text-uppercase"><a href="#" class="text-decoration-none text-light p-2 px-3 active">all</a></li>
-                    <li class="col fw-bold text-uppercase"><a href="#" class="text-decoration-none text-dark border border-2 border-light-subtle p-2">illustrator</a></li>
-                    <li class="col fw-bold text-uppercase"><a href="#" class="text-decoration-none text-dark border border-2 border-light-subtle p-2">ui/ux design</a></li>
-                    <li class="col fw-bold text-uppercase"><a href="#" class="text-decoration-none text-dark border border-2 border-light-subtle p-2">video</a></li>
-                    <li class="col fw-bold text-uppercase"><a href="#" class="text-decoration-none text-dark border border-2 border-light-subtle p-2">web design</a></li>
+                    <li class="col fw-bold text-uppercase"><a href="#" class="text-decoration-none text-dark border border-2 border-light-subtle p-2 pl_hover">illustrator</a></li>
+                    <li class="col fw-bold text-uppercase"><a href="#" class="text-decoration-none text-dark border border-2 border-light-subtle p-2 pl_hover">ui/ux design</a></li>
+                    <li class="col fw-bold text-uppercase"><a href="#" class="text-decoration-none text-dark border border-2 border-light-subtle p-2 pl_hover">video</a></li>
+                    <li class="col fw-bold text-uppercase"><a href="#" class="text-decoration-none text-dark border border-2 border-light-subtle p-2 pl_hover">web design</a></li>
                 </ul>
             </div>
         </div>
@@ -454,7 +490,7 @@
 <!-- plan_end -->
 
 <!-- client_start -->
-<section class="client">
+<section id ="client">
     <div class="container-fluid overlay py-5">
         <div class="client_inner text-white text-center overflow-hidden mt-5 m-auto">
             <h2 class="vw-sm-75 d-inline-block text-uppercase p-3 mb-4 m-auto">client</h2>
@@ -471,7 +507,7 @@
                             <div class="carousel_img mb-4 border border-3 border-light">
                                 <img src="images/img18.jpg" alt="img18" title="img18" class="d-block mw-50 m-auto">
                             </div>
-                            <div class="carousel d-none d-md-block m-auto">
+                            <div class="carousel m-auto">
                                 <p class="text-capitalize text-light fw-light m-auto mb-2">we developed <span class="text-uppercase">awesome html</span> template following coding standard which is <span class="text-uppercase">w3c</span> validated. </p>
                                 <h5 class="text-capitalize"><span class="text-uppercase fw-bold">maria</span> - ceo</h5>
                             </div>
@@ -480,7 +516,7 @@
                             <div class="carousel_img mb-4 border border-3 border-light">
                                 <img src="images/img19.jpg" alt="img19" title="img19" class="d-block mw-50 m-auto">
                             </div>
-                            <div class="carousel d-none d-md-block m-auto">
+                            <div class="carousel m-auto">
                                 <p class="text-capitalize text-light fw-light m-auto mb-2">we developed <span class="text-uppercase">awesome html</span> template following coding standard which is <span class="text-uppercase">w3c</span> validated. </p>
                                 <h5 class="text-capitalize"><span class="text-uppercase fw-bold">lisa</span> - manager</h5>
                             </div>                        
@@ -489,7 +525,7 @@
                             <div class="carousel_img mb-4 border border-3 border-light">
                                 <img src="images/img20.jpg" alt="img20" title="img20" class="d-block mw-50 m-auto">
                             </div>
-                            <div class="carousel d-none d-md-block m-auto">
+                            <div class="carousel m-auto">
                                 <p class="text-capitalize text-light fw-light m-auto mb-2">we developed <span class="text-uppercase">awesome html</span> template following coding standard which is <span class="text-uppercase">w3c</span> validated. </p>
                                 <h5 class="text-capitalize"><span class="text-uppercase fw-bold">angel</span> - developer</h5>
                             </div>                        
@@ -498,7 +534,7 @@
                             <div class="carousel_img mb-4 border border-3 border-light">
                                 <img src="images/img21.jpg" alt="img21" title="img21" class="d-block mw-50 m-auto">
                             </div>
-                            <div class="carousel d-none d-md-block m-auto">
+                            <div class="carousel m-auto">
                                 <p class="text-capitalize text-light fw-light m-auto mb-2">we developed <span class="text-uppercase">awesome html</span> template following coding standard which is <span class="text-uppercase">w3c</span> validated. </p>
                                 <h5 class="text-capitalize"><span class="text-uppercase fw-bold">harris</span> - designer</h5>
                             </div>                        
@@ -540,7 +576,7 @@
 <!-- brand_end -->
 
 <!-- blog_start -->
-<section class="blog py-5">
+<section id ="blog" class="py-5">
     <div class="container-fluid">
         <div class="blog_inner text-center overflow-hidden py-5 m-auto">
             <h2 class="vw-sm-75 d-inline-block text-dark text-uppercase p-1 mb-4 m-auto">our blog</h2>
@@ -549,14 +585,14 @@
                 <div class="blog_lef m-auto">
                     <div class="blog_content d-grid mb-5">
                         <img src="images/img26.jpg" alt="img26" title="img26" class="mw-100">
-                        <div class="blog_para text-start ps-5">
+                        <div class="blog_para text-start ps-lg-5">
                             <h4 class="fw-bold text-uppercase fs-4 pt-4">dramatically redefine</h4>
                             <p class="fw-light pb-4">Dramatically redefine end-to-end portals and efficient customer service. Seamlessly incubate enterprise-wide niches and dynamic intellectual captial. Dramatically innovate front-end customer service whereas emergig infomediaries. Authoritatively</p>
                             <a href="#" class="text-decoration-none text-uppercase fw-bold">read more</a>
                         </div>
                     </div>
                     <div class="blog_content d-grid">
-                        <div class="blog_para text-start ps-4 pb-5">
+                        <div class="blog_para text-start ps-lg-4 pb-lg-5">
                             <h4 class="fw-bold text-uppercase fs-4 pt-4 pb-2">donec rutrum congue</h4>
                             <p class="fw-light pb-2">Donec ruturm congue leo eget malesuada. Pellentesque in ipsum id orci porta dapibus. Nulla porttitor accumsan tincidunt. Donec sollicitudin molestie malesuada. Present sapien massa, convallis</p>
                             <a href="#" class="text-decoration-none text-uppercase fw-bold">read more</a>
@@ -564,7 +600,7 @@
                         <img src="images/img27.jpg" alt="img27" title="img27" class="mw-100">
                     </div>
                 </div>
-                <div class="blog_rig m-auto d-grid mt-0">
+                <div class="blog_rig d-grid">
                     <img src="images/img28.jpg" alt="img28" title="img28">
                     <div class="blog_para text-start ps-4 pb-5">
                         <h4 class="fw-bold text-uppercase fs-4 pt-4">hello world!</h4>
@@ -585,11 +621,11 @@
         <div class="twit_inner text-center mt-5 m-auto">
             <h2 class="text-uppercase fw-bold position-relative mb-5">latest tweet</h2>
             <div class="twit_bottom w-75 pt-3 pb-5 m-auto">
-                <i class="fa-brands fa-twitter fw-bold fs-3 text-white p-3 mb-5"></i>
+                <i class="fa-brands fa-twitter fw-bold fs-3 text-white p-2 py-3 mb-5"></i>
                 <p class="mb-1">awesome</p>
                 <h4 class="text-uppercase mb-1">@awesome</h4>
                 <p class="text-capitalize mb-2">topnews - news magazine newspaper blog viral & buzz wordpress theme</p>
-                <h5 class="mb-5">https://t.co/Z4FTwpmAht #wordPress <i class="fa-sharp fa-solid fa-question"></i> https://t.co/oplAhleW2I</h5>
+                <h5 class="mb-5"><a href="#" class="text-decoration-none">https://t.co/Z4FTwpmAht #wordPress <i class="fa-sharp fa-solid fa-question"></i> https://t.co/oplAhleW2I</a></h5>
                 <h6 class="text-end">2 months ago</h6>
             </div>
         </div>
@@ -612,7 +648,7 @@
 <!-- watch_end -->
 
 <!-- contact_start -->
-<section class="contact py-5">
+<section id ="contact" class="py-5">
     <div class="container-fluid">
         <div class="contact_inner text-center overflow-hidden py-5 m-auto">
             <h2 class="vw-sm-75 d-inline-block text-dark text-uppercase p-1 mb-4 m-auto">contact</h2>
@@ -633,8 +669,7 @@
                     </div>
                 </div>
                 <div class="message mb-4">
-                    <!-- <h4 class="text-capitalize">wirte your message</h4> -->
-                    <textarea name="message" cols="141" rows="6" class="bg-light p-3 border-0">Write Your message</textarea>
+                    <textarea name="message" cols="141" rows="6" class="bg-light p-3 border-0" placeholder="write your message"></textarea>
                 </div>
                 <a href="#" class="fw-bold p-1 d-block text-decoration-none text-uppercase border border-3">send message</a>
             </div>
@@ -649,8 +684,8 @@
         <div class="touch_inner text-center mt-5 m-auto">
             <h2 class="text-uppercase fw-bold position-relative mb-5">get in touch</h2>
             <div class="touch_bottom d-flex text-center pt-5 mb-5">
-                <div class="get_inner w-25">
-                    <div class="get_top w-25 text-white p-2 m-auto mb-5">
+                <div class="get_inner">
+                    <div class="get_top text-white p-2 m-auto mb-5">
                         <i class="fas fa-map-marker-alt p-3"></i>
                     </div>
                     <div class="get_content">
@@ -658,8 +693,8 @@
                         <p class="w-75 text-capitalize m-auto">inner circular Road, broker sector rang plaza, uk</p>
                     </div>
                 </div>
-                <div class="get_inner w-25">
-                    <div class="get_top w-25 bg-danger p-2 text-white m-auto mb-5">
+                <div class="get_inner">
+                    <div class="get_top bg-danger p-2 text-white m-auto mb-5">
                         <i class="fa-sharp fa-regular fa-envelope p-3"></i>
                     </div>
                     <div class="get_content">
@@ -668,8 +703,8 @@
                         <p class="w-75 m-auto">info@yoursite.com</p>
                     </div>
                 </div>
-                <div class="get_inner w-25">
-                    <div class="get_top w-25 bg-warning text-white p-2 m-auto mb-5">
+                <div class="get_inner">
+                    <div class="get_top bg-warning text-white p-2 m-auto mb-5">
                         <i class="fa-solid fa-mobile-screen p-3"></i>
                     </div>
                     <div class="get_content">
@@ -678,8 +713,8 @@
                         <p class="w-75 text-capitalize m-auto">+61 (001) 2345 67890</p>
                     </div>
                 </div>
-                <div class="get_inner w-25">
-                    <div class="get_top w-25 bg-success text-white p-2 m-auto mb-5">
+                <div class="get_inner">
+                    <div class="get_top bg-success text-white p-2 m-auto mb-5">
                         <i class="fa-brands fa-skype p-3"></i>
                     </div>
                     <div class="get_content">
@@ -690,7 +725,7 @@
                 </div>
             </div>
             <form class="email pt-5 d-grid mb-5">
-                <input type="email" placeholder="Enter your email address here to subscribe our newsletter..." class="w-100 text-center p-3">
+                <input type="email" placeholder="Enter your email address here to subscribe our newsletter..." class="text-center p-3">
                 <a href="#" class="text-decoration-none text-dark text-uppercase fw-bold p-1 pt-0">subscribe<i class="fa-regular fa-paper-plane text-dark ps-2"></i></a>
             </form>
         </div>
@@ -733,7 +768,7 @@
 <footer class="py-3 pb-2 mt-3">
     <div class="container-fluid">
         <div class="footer_inner text-end m-auto">
-            <h4 class="text-uppercase text-center mb-0"><i class="fa-solid fa-diamond-turn-right fs-5 pe-1"></i>awesome <span>2023</span></h4>
+            <h4 class="text-uppercase text-center mb-0"><i class="fa-solid fa-diamond-turn-right pe-1"></i>awesome <span>2023</span></h4>
             <a href="#"><i class="fa-solid fa-chevron-up text-white p-2"></i></a>
         </div>
     </div>
